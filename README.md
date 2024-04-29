@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+Learn Test-Driven Development (TDD) by creating a Calculator class through unit testing. Advance your skills by iteratively developing a string calculator that manages different inputs and requirements, guided by specific unit tests.
 
 ## Prerequisites
 
@@ -12,42 +12,32 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ## Content
 
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment  |
-| [Concepts](./concepts/README.md)                         | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | -- | -- | tktk skills covered                     |
-| **Total content**                                        | -- | -- |                                         |
+| Lesson | Time | Learning Objectives |
+| ------ |:----------:|:------ |
+| [Create a Unit Test](./create-a-unit-test/README.md) | 20 min | Create a unit test to employ Test-Driven Development to create a simple Calculator class. |
+| [Requirement One](./requirement-1/README.md) | 10 min | Apply Test-Driven Development techniques to iteratively develop a string calulator that handles various inputs and requirments while passing specific unit tests.  |
+| [Requirement Two](./requirement-2/README.md) | 10 min | - |
+| [Requirement Three](./requirement-3/README.md) | 10 min | - |
+| [Requirement Four](./requirement-4/README.md) | 15 min | - |
+| [Requirement Five](./requirement-5/README.md) | 15 min | - |
+| [Requirement Six](./requirement-6/README.md) | 15 min | - |
+| [Requirement Seven](./requirement-7/README.md) | 10 min | - |
+| [Requirement Eight](./requirement-8/README.md) | 20 min | - |
+| **Total content**  | 125 min |  |
 
-## Level Up content
+## Additional Resources
 
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [tktk Microlesson Name](./tktk-microlesson-04/README.md) | -- | -- | tktk skills covered                     |
-| **Total Level Up content**                               | -- | -- |                                         |
+This section provides more resources on the topic if you are looking to go deeper.
 
-## References
-
-📖 [Reference Materials](./references/README.md)
-
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
+- [What is Test Driven Development (TDD)? - Agile Alliance](https://www.agilealliance.org/glossary/tdd/)
+- [Test Driven Development (TDD) : Approach & Benefits](https://www.browserstack.com/guide/what-is-test-driven-development)
+- [Pair Programming & Test Driven Development done right](https://www.youtube.com/watch?v=CLfT1fH-38A)
 
 ## Internal resources
-
-✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
-
-🎥 [Video Hub](./internal-resources/video-hub.md)
 
 🏗️ [Release Notes](./internal-resources/release-notes.md)
 
 ---
 
 **Find a 👾 bug 👾 or have suggestions? [Let us know](https://git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/blob/main/module-feedback.md)!**
+
