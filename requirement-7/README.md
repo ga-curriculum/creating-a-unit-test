@@ -53,20 +53,3 @@ verifies whether the exception message is correct.
 ```
 
 This time code was added that collects negative numbers in a List and throws an exception if there was any.
-
-**Note** :- In order to `whenNewLineIsUsedBetweenNumbersThenReturnValuesIsTheirSums`
-and `whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers` pass you need to modify the assert statements like so :
-
-```java 
-    @Test
-    @DisplayName("When new line is used between numbers then return values is their sum")
-    public final void whenNewLineIsUsedBetweenNumbersThenReturnValuesIsTheirSums() {
-        Assert.assertEquals(3 + 6 + 15, Calculator.add("3,6\n15"));
-    }
-
-    @Test
-    @DisplayName("When delimiter is specified then it is used to separate numbers")
-    public final void whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers() {
-        Assert.assertEquals(3 + 6 + 15, Calculator.add("//;\n3;6;15"));
-    }
-```
