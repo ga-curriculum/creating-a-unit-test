@@ -1,4 +1,4 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![Creating a Unit Test](./assets/creating-a-unit-test.png)
 
 ## About
 
@@ -6,9 +6,7 @@ Learn Test-Driven Development (TDD) by creating a Calculator class through unit 
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- Java Test-Driven Development Module
 
 ## Content
 
