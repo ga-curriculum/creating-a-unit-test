@@ -8,21 +8,21 @@ Create `test` directory in the `java-tdd/` root directory.
 
 Mark the directory as `Test Sources Root`.
 
-![img.png](lecture/images/4-select-test-root.png)
+![img.png](./assets/4-select-test-root.png)
 
 Open `Calculator` class, and place the caret somewhere inside the curly braces in the class, `press ⌘ N`.
 
-![img.png](lecture/images/5-create-test-1.png)
+![img.png](./assets/5-create-test-1.png)
 
 Select Test Method from the menu. This will create a test method from the default template.
 
 Select `JUnit4` dependency by clicking the `Fix` button.
 
-![img_1.png](lecture/images/5-create-test-2.png).
+![img_1.png](./assets/5-create-test-2.png).
 
 Finally, close the Download Library from Maven Repository dialog box by pressing OK button.
 
-![img.png](lecture/images/5-create-test-3.png)
+![img.png](./assets/5-create-test-3.png)
 
 In the package `com.example.demo`, be sure to check whether the `CalculatorTest` class exists.
 

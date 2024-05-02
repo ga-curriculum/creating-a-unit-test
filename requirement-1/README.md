@@ -49,7 +49,7 @@ public class CalculatorTest {
 Here you can see I'm importing `@BeforeEach` and `@DisplayName` annotation, and it is not part of `JUnit4`. You can
 install dependency by mouse hovering line 5, and click on Add `JUnit5.x.x` to classpath when dialog box appears.
 
-![img.png](lecture/images/6-import-junit-5.png)
+![img.png](./assets/6-import-junit-5.png)
 
 Keep in mind that the idea behind TDD is to do the necessary minimum to make the tests pass and repeat the process until
 the whole functionality is implemented. In this case the name of one of the test methods
