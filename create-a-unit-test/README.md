@@ -2,6 +2,29 @@
 
 **Learning objective:** By the end of this lesson, students will be able to create a unit test to employ Test-Driven Development to create a simple Calculator class. 
 
+### Setting up the Calculator Class
+
+We are going to take a look at a really simple example to introduce concept of TDD. We will write a very simple
+`Calculator` class.
+
+Following a TDD approach, let's say that we have a requirement for an `add` function, which will determine the sum of
+two numbers, and return the output. Let's write a failing test for this.
+
+To get started,
+
+1. Right-click the folder `src` in the App root and select New | Java Class.
+2. In the popup that opens, name the new package and `Calculator` class: `com.example.demo.Calculator`
+   ![](./assets/3-create-java-class.png)
+3. Open the `Calculator.java` in the `src/` directory and add the following contents.
+    ```java
+    // src/main/tdd/Calculator.java
+    
+    package com.example.demo;
+    
+    public class Calculator {
+    }
+    ```
+
 ### Creating a Unit Test
 
 Create `test` directory in the `java-tdd/` root directory.
