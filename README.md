@@ -12,16 +12,16 @@ Learn Test-Driven Development (TDD) by creating a Calculator class through unit 
 
 | Lesson | Time | Learning Objectives |
 | ------ |:----------:|:------ |
-| [Create a Unit Test](./create-a-unit-test/README.md) | 20 min | Create a unit test to employ Test-Driven Development to create a simple Calculator class. |
+| [Create a Unit Test](./create-a-unit-test/README.md) | 15 min | Create a unit test to employ Test-Driven Development to create a simple Calculator class. |
 | [Requirement One](./requirement-1/README.md) | 10 min | Apply Test-Driven Development techniques to iteratively develop a string calulator that handles various inputs and requirments while passing specific unit tests.  |
 | [Requirement Two](./requirement-2/README.md) | 10 min | - |
 | [Requirement Three](./requirement-3/README.md) | 10 min | - |
-| [Requirement Four](./requirement-4/README.md) | 15 min | - |
-| [Requirement Five](./requirement-5/README.md) | 15 min | - |
-| [Requirement Six](./requirement-6/README.md) | 15 min | - |
+| [Requirement Four](./requirement-4/README.md) | 10 min | - |
+| [Requirement Five](./requirement-5/README.md) | 10 min | - |
+| [Requirement Six](./requirement-6/README.md) | 10 min | - |
 | [Requirement Seven](./requirement-7/README.md) | 10 min | - |
 | [Requirement Eight](./requirement-8/README.md) | 20 min | - |
-| **Total content**  | 125 min |  |
+| **Total content**  | 105 min |  |
 
 ## Additional Resources
 
