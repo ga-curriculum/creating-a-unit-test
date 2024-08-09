@@ -13,7 +13,7 @@ Learn Test-Driven Development (TDD) by creating a Calculator class through unit 
 | Lesson | Time | Learning Objectives |
 | ------ |:----------:|:------ |
 | [Create a Unit Test](./create-a-unit-test/README.md) | 15 min | Create a unit test to employ Test-Driven Development to create a simple Calculator class. |
-| [Requirement One](./requirement-1/README.md) | 10 min | Apply Test-Driven Development techniques to iteratively develop a string calulator that handles various inputs and requirments while passing specific unit tests.  |
+| [Requirement One](./requirement-1/README.md) | 10 min | Apply Test-Driven Development techniques to iteratively develop a string calculator that handles various inputs and requirements while passing specific unit tests.  |
 | [Requirement Two](./requirement-2/README.md) | 10 min | - |
 | [Requirement Three](./requirement-3/README.md) | 10 min | - |
 | [Requirement Four](./requirement-4/README.md) | 10 min | - |
