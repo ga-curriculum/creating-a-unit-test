@@ -7,9 +7,6 @@
 We are going to take a look at a really simple example to introduce concept of TDD. We will write a very simple
 `Calculator` class.
 
-Following a TDD approach, let's say that we have a requirement for an `add` function, which will determine the sum of
-two numbers, and return the output. Let's write a failing test for this.
-
 To get started,
 
 1. Right-click the folder `src` in the App root and select New | Java Class.
@@ -71,3 +68,114 @@ first requirement in terms of tests.
 
 Even though this is a very simple program, just looking at those requirements can be overwhelming. Let’s take a
 different approach. Forget what you just read and let us go through the requirements one by one.
+
+<details>
+<summary>Solution</summary>
+
+Calculator.java
+
+```java
+public class Calculator {
+
+    public int add(String numbers) {
+        if (numbers.isEmpty()) {
+            return 0;
+        }
+
+        String delimiter = ",|\n"; // default delimiters
+        if (numbers.startsWith("//")) {
+            int delimiterIndex = numbers.indexOf("\n");
+            delimiter = numbers.substring(2, delimiterIndex);
+            numbers = numbers.substring(delimiterIndex + 1);
+            delimiter = delimiter.replace("[", "").replace("]", ""); // support for custom delimiters
+            delimiter = java.util.regex.Pattern.quote(delimiter); // to handle special characters in regex
+        }
+
+        String[] tokens = numbers.split(delimiter);
+        int sum = 0;
+        List<Integer> negatives = new ArrayList<>();
+
+        for (String token : tokens) {
+            if (token.isEmpty()) {
+                continue;
+            }
+            int number = Integer.parseInt(token.trim());
+            if (number < 0) {
+                negatives.add(number);
+            } else if (number <= 1000) {
+                sum += number;
+            }
+        }
+
+        if (!negatives.isEmpty()) {
+            throw new IllegalArgumentException("Negatives not allowed: " + negatives);
+        }
+
+        return sum;
+    }
+}
+```
+
+CalculatorTest.java
+
+```java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class CalculatorTest {
+
+    private final Calculator calculator = new Calculator();
+
+    @Test
+    void testEmptyString() {
+        assertEquals(0, calculator.add(""));
+    }
+
+    @Test
+    void testOneNumber() {
+        assertEquals(1, calculator.add("1"));
+    }
+
+    @Test
+    void testTwoNumbers() {
+        assertEquals(3, calculator.add("1,2"));
+    }
+
+    @Test
+    void testMultipleNumbers() {
+        assertEquals(6, calculator.add("1,2,3"));
+    }
+
+    @Test
+    void testNewLineAsDelimiter() {
+        assertEquals(6, calculator.add("1\n2,3"));
+    }
+
+    @Test
+    void testDifferentDelimiters() {
+        assertEquals(3, calculator.add("//;\n1;2"));
+    }
+
+    @Test
+    void testNegativeNumber() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.add("-1,2");
+        });
+        assertTrue(exception.getMessage().contains("Negatives not allowed"));
+    }
+
+    @Test
+    void testNumbersBiggerThan1000() {
+        assertEquals(2, calculator.add("2,1001"));
+    }
+
+    @Test
+    void testMultipleNegatives() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.add("2,-4,-5");
+        });
+        assertTrue(exception.getMessage().contains("-4") && exception.getMessage().contains("-5"));
+    }
+}
+```
+</details>
