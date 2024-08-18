@@ -1,5 +1,7 @@
 # ![Creating a Unit Test](./assets/creating-a-unit-test.png)
 
+# THIS REPO IS DEPRECATED, BUT STILL IN USE BY IN-FLIGHT COHORTS. IT CAN BE DELETED AFTER APR 1, 2025. You are likely looking for [this](https://git.generalassemb.ly/modular-curriculum-all-courses/writing-unit-tests-in-java) repo instead.
+
 ## About
 
 Learn Test-Driven Development (TDD) by creating a Calculator class through unit testing. Advance your skills by iteratively developing a string calculator that manages different inputs and requirements, guided by specific unit tests.
